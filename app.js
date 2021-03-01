@@ -6,12 +6,9 @@ const mealDetails = mealName => {
     const ul = document.getElementById('meal-name');
     for (let i = 0; i < mealName.length; i++) {
         const allMeals = mealName[i];
-        console.log(allMeals);
-
-
-        // const li = document.createElement('li');
-        // li.innerText = categories.strCategory;
-        // ul.appendChild(li);
-        
+        const mealId = allMeals.idCategory;
+        const li = document.createElement('li');
+        li.innerText = mealId;
+        ul.appendChild(li);
     }
 }
