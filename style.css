@@ -1,3 +1,15 @@
 /* #meal-name{
     border: 1px solid green;
 } */
+
+/* .meal-category{
+    color: green;
+} */
+
+#meal-name{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#meal-description{
+    display: none;
+}

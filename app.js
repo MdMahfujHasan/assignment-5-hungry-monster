@@ -11,21 +11,19 @@ const mealDetails = mealName => {
 
         const mealId = allMeals.idCategory;
         const mealCategory = allMeals.strCategory;
-
-        // const h6 = document.createElement('h6');
-        // h6.innerText = mealId;
-        // const h3 = document.createElement('h3');
-        // h3.innerText = mealCategory;
-
-        // myMeal.appendChild(h6);
-        // myMeal.appendChild(h3);
-        // mealDiv.appendChild(myMeal);
+        const mealImg = allMeals.strCategoryThumb;
+        const mealDescription = allMeals.strCategoryDescription;
 
         const mealInfo = `
-        <h6>${mealId}</h6>
+        <img src="${mealImg}">
+        <h4>${mealId}</h4>
         <h3>${mealCategory}</h3>
+        <p id="meal-description">${mealDescription}</p>
         `
         myMeal.innerHTML = mealInfo;
         mealDiv.appendChild(myMeal);
     }
+}
+function my(){
+   document.getElementById('meal-description').style.display = "block";
 }
