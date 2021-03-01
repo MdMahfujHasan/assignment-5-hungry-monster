@@ -1,11 +1,6 @@
-/* #meal-name{
-    border: 1px solid green;
-} */
-
-/* .meal-category{
-    color: green;
-} */
-
+*{
+    background-color: lightblue;
+}
 #meal-name{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
